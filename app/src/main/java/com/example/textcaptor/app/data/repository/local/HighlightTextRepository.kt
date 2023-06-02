@@ -11,9 +11,9 @@ interface HighlightTextRepository {
 
     suspend fun getTexts(): List<HighlightedTextEntity>
 
-    suspend fun getTextById(id: String): HighlightedTextEntity
+    suspend fun getTextById(id: String): HighlightedTextEntity?
 
     suspend fun deleteTextById(id: String): Boolean
 
-    suspend fun updateText(text: HighlightedTextEntity): HighlightedTextEntity
+    suspend fun updateText(text: HighlightedTextEntity): HighlightedTextEntity?
 }

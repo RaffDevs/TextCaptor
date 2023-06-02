@@ -15,7 +15,7 @@ class HighlightTextUsecaseImpl
         TODO("Not yet implemented")
     }
 
-    override suspend fun getTextById(id: String): HighlightedText {
+    override suspend fun getTextById(id: String): HighlightedText? {
         TODO("Not yet implemented")
     }
 
@@ -23,7 +23,7 @@ class HighlightTextUsecaseImpl
         TODO("Not yet implemented")
     }
 
-    override suspend fun updateText(text: HighlightedTextEntity): HighlightedText {
+    override suspend fun updateText(text: HighlightedTextEntity): HighlightedText? {
         TODO("Not yet implemented")
     }
 }

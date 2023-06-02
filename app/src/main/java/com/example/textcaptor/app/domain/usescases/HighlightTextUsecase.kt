@@ -8,9 +8,9 @@ interface HighlightTextUsecase {
 
     suspend fun getTexts(): List<HighlightedText>
 
-    suspend fun getTextById(id: String): HighlightedText
+    suspend fun getTextById(id: String): HighlightedText?
 
     suspend fun deleteTextById(id: String): Boolean
 
-    suspend fun updateText(text: HighlightedTextEntity): HighlightedText
+    suspend fun updateText(text: HighlightedTextEntity): HighlightedText?
 }
